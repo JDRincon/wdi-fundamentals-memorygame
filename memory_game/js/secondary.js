@@ -41,7 +41,13 @@ if (cardsInPlay.length === 2){
 }
 else if (cardsInPlay.length < 2){
 	console.log("Sorry,try again")
-};
+}
+}
+var creatBoard = function(){
+	for (var i =0; i < cardsInPlay.length; i++){
+		var newListItem = document.createElement('img');
+		cardsInPlay.setAttribute('src',"images/back.png");
+	}
 }
 flipcard(0);
 flipcard(2);
